@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="writ1co2system.startPageController">
+   <children>
+      <Button fx:id="btnClient2Access1" layoutX="272.0" layoutY="137.0" mnemonicParsing="false" onAction="#connectToServer" text="Client 1" />
+      <Label fx:id="lblTitle" layoutX="186.0" layoutY="56.0" text="C02 Systems">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClientAccess2" layoutX="272.0" layoutY="175.0" mnemonicParsing="false" onAction="#connectToServer" text="Client 2" />
+      <Button fx:id="btnClientAccess3" layoutX="272.0" layoutY="217.0" mnemonicParsing="false" onAction="#connectToServer" text="Client 3" />
+      <Button fx:id="btnClientAccess4" layoutX="272.0" layoutY="259.0" mnemonicParsing="false" onAction="#connectToServer" text="Client 4" />
+      <Button fx:id="btnClientAccess5" layoutX="272.0" layoutY="304.0" mnemonicParsing="false" onAction="#connectToServer" text="Client 5" />
+   </children>
+</Pane>
