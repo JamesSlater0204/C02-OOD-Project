@@ -40,7 +40,7 @@ public class App extends Application {
         Scene scene4 = new Scene(loadFXML("startPage"));
         Scene scene5 = new Scene(loadFXML("startPage"));
 
-        // Create stages for each scene
+        // Create stages to simulate each client connection
         Stage stage1 = new Stage();
         stage1.setScene(scene1);
 

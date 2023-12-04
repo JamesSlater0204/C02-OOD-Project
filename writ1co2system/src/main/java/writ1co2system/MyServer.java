@@ -18,13 +18,17 @@ public class MyServer {
     }
 
     public void startServer() {
+        //always checking for a new connection to the server
         while (true) {
             try {
+                //create a connection socket and accept the socket connection
                 Socket socket = serverSocket.accept();
+                //if theres enough space, we allow them to connect
                 if (currentConnections < MAX_CONNECTIONS) {
                     currentConnections++;
                     System.out.println("new connection.");
                 } 
+                //go here if there are already 4 connections
                 else 
                 {
                     System.out.println("Max connections reached. Connection rejected.");

@@ -9,12 +9,11 @@ public class startPageController {
 
     @FXML
     private void connectToServer() throws IOException {
+        
         MyServer server = App.getServerInstance();
-
         boolean hasSpace = server.hasSpaceForConnection();
 
-        if(hasSpace)
-        {
+        if (hasSpace) {
             Socket socket = new Socket("localhost", 5000);
             App.setRoot("accessPage");
         }
